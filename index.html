@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Suzy's Flowers</title>
+</head>
+<body>
+    <div class="grid-container">
+        <h1 class="title">Suzy's Flowers</h1>  
+        <button id="sidebar-btn" class="show-sidebar" onclick="openSidebar()">☰</button>  
+        
+        <div id="mySidebar" class="sidebar">
+            <button class="hide-sidebar" onclick="closeSidebar()">x</button>
+            <a class="nav-link" href="#">home</a>
+            <a class="nav-link" href="#">shop</a>
+            <a class="nav-link" href="#">about</a>
+            <a class="nav-link" href="#">contact us</a>
+        </div> 
+
+        <div class="catalogue">
+            <a href="#">
+                <div class="product">
+                    <img src="./imgs/blue-hydrangeas.jpg">
+                    <h3 class="item">Blue Hydrangeas</h3>
+                    <h5 class="price">$27.00</h5>
+                </div>
+            </a>
+            <a href="#">
+                <div class="product">
+                    <img src="./imgs/mixed-flowers1.jpg">
+                    <h3 class="item">Mixed Bouquet</h3>
+                    <h5 class="price">$55.00</h5>
+                </div>
+            </a>
+            <a href="#">
+                <div class="product">
+                    <img src="./imgs/peonies.jpg">
+                    <h3 class="item">Mixed Peonies</h3>
+                    <h5 class="price">$34.00</h5>
+                </div>
+            </a>
+            <a href="#">
+                <div class="product">
+                    <img src="./imgs/pink-peonies.jpg">
+                    <h3 class="item">Pink Peonies</h3>
+                    <h5 class="price">$34.00</h5>
+                </div>
+            </a>
+            <a href="#">
+                <div class="product">
+                    <img src="./imgs/mixed-flowers2.jpg">
+                    <h3 class="item">Mixed Bouquet</h3>
+                    <h5 class="price">$60.00</h5>
+                </div>
+            </a>
+            <a href="#">
+                <div class="product">
+                    <img src="./imgs/tulips.jpg">
+                    <h3 class="item">Colourful Tulips</h3>
+                    <h5 class="price">$44.00</h5>
+                </div>
+            </a>
+            <a href="#">
+                <div class="product">
+                    <img src="./imgs/red-roses.jpg">
+                    <h3 class="item">Red Roses</h3>
+                    <h5 class="price">$62.00</h5>
+                </div>
+            </a>
+            <a href="#">
+                <div class="product">
+                    <img src="./imgs/white-roses.jpg">
+                    <h3 class="item">White Roses</h3>
+                    <h5 class="price">$62.00</h5>
+                </div>
+            </a>
+            <a href="#">
+                <div class="product">
+                    <img src="./imgs/lilies.jpg">
+                    <h3 class="item">Lilies</h3>
+                    <h5 class="price">$36.00</h5>
+                </div>
+            </a>
+            <a href="#">
+                <div class="product">
+                    <img src="./imgs/mixed-flowers3.jpg">
+                    <h3 class="item">Mixed Bouquet</h3>
+                    <h5 class="price">$55.00</h5>
+                </div>
+            </a>          
+        </div> 
+        
+        <footer class="foot">
+            <h3>Your conact information here!</h3>
+        </footer>
+    </div>
+
+    <script>
+        function openSidebar(){
+            const sidebar = document.getElementById("mySidebar");
+            sidebar.style.width === "0px" ? sidebar.style.width = "450px" : sidebar.style.width = "0px";
+        }
+
+        function closeSidebar(){
+            document.getElementById("mySidebar").style.width = "0px";
+        }
+    </script>
+</body>
+</html>
